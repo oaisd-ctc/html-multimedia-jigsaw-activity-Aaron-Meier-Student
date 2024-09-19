@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Jigsaw</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>HTML Multimedia Demonstration</h1>
+    <h2>Video Element</h2>
+    <video width="480" height="270" controls>
+        <source src="./videos/Raindrops_Videvo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h2>Audio Element</h2>
+    <audio controls>
+        <source src="./audios/mixaund-feel.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+    <h2>Inline Frame Element</h2>
+    <iframe src="https://example.com/" width="800" height="420">
+    </iframe>
+    <h2>Canvas Element</h2>
+    <canvas id="myCanvas" width="400" height="200">
+        Your browser does not support the canvas tag.
+    </canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#0066A0";
+        ctx.fillRect(0, 0, 150, 75);
+    </script>
+    <h2>SVG Element</h2>
+    <svg width="200" height="100">
+        <circle cx="100" cy="50" r="40" stroke="#000000" stroke-width="4" fill="#FF0000"></circle>
+    </svg>
+    <svg width="200" height="100">
+        <rect width="200" height="100" style="fill: #2f96a8; stroke-width:8; stroke: #000000"></rect>
+    </svg>
+    <svg width="220" height="120">
+        <ellipse cx="110" cy="60" rx="100" ry="50" style="fill:#b6f79d; stroke:#000000; stroke-width:3"></ellipse>
+    </svg>
+    <svg width="200" height="100">
+        <line x1="0" y1="0" x2="200" y2="100" style="stroke:rgb(209, 209, 209);stroke-width:4"></line>
+    </svg>
+    <svg width="200" height="100">
+        <polygon points="10,90 100,10 190,90" style="fill:#ffd900; stroke:#000000; stroke-width:3"></polygon>
+    </svg>
+</body>
+</html>
